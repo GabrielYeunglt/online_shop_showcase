@@ -1,0 +1,32 @@
+/* src/components/HeroBanner.css */
+.hero-banner {
+    height: 50vh;
+    background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero-content button:hover {
+    background-color: #0056b3;
+  }
+  
