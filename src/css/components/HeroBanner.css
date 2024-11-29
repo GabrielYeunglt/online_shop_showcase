@@ -1,7 +1,7 @@
 /* src/components/HeroBanner.css */
 .hero-banner {
     height: 50vh;
-    background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
+    /* background: url('https://via.placeholder.com/1500x500') center/cover no-repeat; */
     display: flex;
     align-items: center;
     justify-content: center;

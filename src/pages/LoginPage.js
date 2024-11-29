@@ -1,65 +1,71 @@
 // src/components/LoginPage.js
-import React, { useState } from 'react';
-import { Container, Form, Button, Alert } from 'react-bootstrap';
-import "../css/pages/LoginPage";
+import React, { useState } from "react";
+import { Container, Form, Button, Alert } from "react-bootstrap";
+import "../css/pages/LoginPage.css";
+
 
 const LoginPage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   // Handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
 
     // Check if both fields are provided
-    if (username === '' || password === '') {
-      setError('Please fill in both fields.');
+    if (username === "" || password === "") {
+      setError("Please fill in both fields.");
     } else {
-      setError('');
+      setError("");
       // Handle successful login (e.g., authentication logic here)
-      console.log('Username:', username);
-      console.log('Password:', password);
+      console.log("Username:", username);
+      console.log("Password:", password);
     }
   };
 
   return (
-    <Container className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-      <div className="w-100" style={{ maxWidth: '400px' }}>
-        <h2 className="text-center mb-4">Login</h2>
+    <div className="container-sm login-container">
+      <main className="form-signin w-100 m-auto">
+        <form>
+          <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
 
-        {error && <Alert variant="danger">{error}</Alert>}
-
-        <Form onSubmit={handleSubmit}>
-          {/* Username Field */}
-          <Form.Group controlId="username" className="mb-3">
-            <Form.Label>Username</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter your username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+          <div className="form-floating">
+            <input
+              type="email"
+              className="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
             />
-          </Form.Group>
-
-          {/* Password Field */}
-          <Form.Group controlId="password" className="mb-3">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
+            <label htmlFor="floatingInput">Email address</label>
+          </div>
+          <div className="form-floating">
+            <input
               type="password"
-              placeholder="Enter your password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              className="form-control"
+              id="floatingPassword"
+              placeholder="Password"
             />
-          </Form.Group>
+            <label htmlFor="floatingPassword">Password</label>
+          </div>
 
-          {/* Submit Button */}
-          <Button variant="primary" type="submit" block>
-            Login
-          </Button>
-        </Form>
+          <div className="form-check text-start my-3">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              value="remember-me"
+              id="flexCheckDefault"
+            />
+            <label className="form-check-label" htmlFor="flexCheckDefault">
+              Remember me
+            </label>
+          </div>
+          <button className="btn btn-primary w-100 py-2" type="submit">
+            Sign in
+          </button>
+        </form>
+      </main>
       </div>
-    </Container>
   );
 };
 
