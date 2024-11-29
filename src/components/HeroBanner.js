@@ -7,8 +7,8 @@ const HeroBanner = () => {
   return (
     <div className="hero-banner">
       <div className="hero-content">
-        <h1>Welcome to Our Online Shop</h1>
-        <p>Your one-stop destination for the best products.</p>
+        <h1>Welcome to Gabriel's React showcase!</h1>
+        <p>Feel free to check around.</p>
         <Link to='/product'><button>Shop Now</button></Link>
       </div>
     </div>
