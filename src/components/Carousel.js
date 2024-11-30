@@ -6,9 +6,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Carousel = () => {
   const images = [
-    '/herobanners/hero1.png',
-    '/herobanners/hero2.png',
-    '/herobanners/hero3.png',
+    './herobanners/hero1.png',
+    './herobanners/hero2.png',
+    './herobanners/hero3.png',
   ];
 
   return (
