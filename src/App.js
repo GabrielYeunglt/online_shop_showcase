@@ -11,19 +11,25 @@ import AboutPage from "./pages/AboutPage";
 import LoginPage from "./pages/LoginPage";
 import Carousel from "./components/Carousel";
 import SignupPage from "./pages/SignupPage";
+import FeaturesPage from "./pages/FeaturesPage";
 
 const App = () => {
   return (
     <div className="app">
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      ></link>
       <Header />
       <main>
         <Carousel />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route path="/product" element={<ProductList />} />
+          <Route path="/products" element={<ProductList />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          <Route path="/features" element={<FeaturesPage />} />
         </Routes>
       </main>
       <Footer />

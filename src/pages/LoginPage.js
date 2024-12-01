@@ -75,7 +75,7 @@ const LoginPage = () => {
                 <div className="row justify-content-center">
                   <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-2 order-lg-1">
                     <img
-                      src="./login.webp"
+                      src={process.env.PUBLIC_URL + "/login.webp"}
                       className="img-fluid"
                       alt="Signin art"
                     />
