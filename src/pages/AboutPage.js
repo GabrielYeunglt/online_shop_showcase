@@ -89,7 +89,19 @@ const AboutPage = () => {
   return (
     <div>
       <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary row">
-        <div class="col-lg-6 px-0">
+        <div class="col-lg-6 col-md-12 col-sm-12 order-lg-2">
+          <div className="row justify-content-center">
+            <img
+              className="img-fluid selfie"
+              src={process.env.PUBLIC_URL + "/self.jpg"}
+              alt="Me"
+            />
+          </div>
+          <div className="row name">
+            <p className="text-center fs-5 fw-bold fst-italic">Gabriel Yeung</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 px-0 order-lg-1 order-md-2 order-sm-2">
           <h1 class="display-4 fst-italic">About me</h1>
           <p class="lead my-3">
             I am an experienced full-stack developer with over 7 years of
@@ -98,18 +110,6 @@ const AboutPage = () => {
             back-end development, with a strong focus on creating scalable,
             efficient, and user-friendly systems.
           </p>
-        </div>
-        <div class="col-lg-6 col-12">
-          <div className="row justify-content-center">
-            <img
-              className="selfie"
-              src={process.env.PUBLIC_URL + "/self.jpg"}
-              alt="Me"
-            />
-          </div>
-          <div className="row name">
-            <p className="text-center fs-5 fw-bold fst-italic">Gabriel Yeung</p>
-          </div>
         </div>
       </div>
       <div className="container">

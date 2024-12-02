@@ -17,7 +17,7 @@ const Header = () => {
           <li><Link to="/" className="nav-link px-2 text-secondary">Home</Link></li>
           <li><Link to="/features" className="nav-link px-2 text-white">Features</Link></li>
           <li><Link to="/products" className="nav-link px-2 text-white">Products</Link></li>
-          <li><Link to="#" className="nav-link px-2 text-white">FAQs</Link></li>
+          {/* <li><Link to="#" className="nav-link px-2 text-white">FAQs</Link></li> */}
           <li><Link to="/about" className="nav-link px-2 text-white">About</Link></li>
         </ul>
 

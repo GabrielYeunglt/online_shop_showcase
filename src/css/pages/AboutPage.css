@@ -3,6 +3,12 @@
   border-radius: 30%;
 }
 
+@media only screen and (max-width: 600px) {
+    .selfie {
+        width: 100%;
+    }
+  }
+
 .name {
   margin-top: 2vh;
 }
