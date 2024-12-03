@@ -4,3 +4,6 @@ body {
     font-family: 'Arial', sans-serif;
   }
   
+.login-container {
+    margin: 50px 50px 50px 50px;
+}

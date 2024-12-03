@@ -6,16 +6,16 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Carousel = () => {
   const images = [
-    '/herobanners/hero1.png',
-    '/herobanners/hero2.png',
-    '/herobanners/hero3.png',
+    '/carousel/hero1.png',
+    '/carousel/hero2.png',
+    '/carousel/hero3.png',
   ];
 
   return (
     <ResponsiveCarousel autoPlay infiniteLoop showThumbs={false}>
       {images.map((src, index) => (
         <div key={index}>
-          <img src={src} alt={`Slide ${index + 1}`} />
+          <img src={process.env.PUBLIC_URL + src} alt={`Slide ${index + 1}`} />
         </div>
       ))}
     </ResponsiveCarousel>
