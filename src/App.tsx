@@ -9,9 +9,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import LoginPage from "./pages/LoginPage";
-import Carousel from "./components/Carousel";
 import SignupPage from "./pages/SignupPage";
 import FeaturesPage from "./pages/FeaturesPage";
+import ResponsiveCarousel from "./components/ResponsiveCarousel";
 
 const App = () => {
   return (
@@ -22,9 +22,9 @@ const App = () => {
       ></link>
       <Header />
       <main>
-        <Carousel />
+        <ResponsiveCarousel />
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/products" element={<ProductList />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/login" element={<LoginPage />} />

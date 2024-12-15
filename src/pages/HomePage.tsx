@@ -1,5 +1,5 @@
 // src/pages/HomePage.js
-import React from "react";
+import React, { FC } from "react";
 import HeroBanner from "../components/HeroBanner";
 
 const HomePage = () => {
