@@ -1,5 +1,5 @@
 // src/components/LoginPage.js
-import React, { useState } from "react";
+import React, { useState, FC } from "react";
 import { Container, Form, Button, Alert } from "react-bootstrap";
 import "../css/pages/LoginPage.css";
 
@@ -9,7 +9,7 @@ const SignupPage = () => {
   const [error, setError] = useState("");
 
   // Handle form submission
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: Event): void => {
     event.preventDefault();
 
     // Check if both fields are provided

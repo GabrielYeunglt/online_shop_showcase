@@ -1,7 +1,13 @@
 // src/components/Cart.js
 import React from 'react';
+import { Product } from '../../lib/type';
 
-const Cart = ({ cartItems, removeFromCart }) => {
+type CartProps = {
+    cartItems: Product[];
+    removeFromCart: (id: number) => void;
+}
+
+const Cart = ({ cartItems, removeFromCart }: CartProps) => {
   return (
     <div className="cart">
       <h2>Your Cart</h2>

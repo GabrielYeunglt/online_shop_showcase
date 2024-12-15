@@ -1,5 +1,5 @@
 // src/components/LoginPage.js
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { Container, Form, Button, Alert } from "react-bootstrap";
 // import "../css/pages/LoginPage.css";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ const LoginPage = () => {
   const [error, setError] = useState("");
 
   // Handle form submission
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: Event): void => {
     event.preventDefault();
 
     // Check if both fields are provided
